@@ -29,4 +29,4 @@ class Snippet(models.Model):
         """
         Provides field to use for ordering upon data retrieval.
         """
-        ordering = ('created')
+        ordering = ('created',)
