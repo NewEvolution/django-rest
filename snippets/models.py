@@ -26,6 +26,12 @@ class Snippet(models.Model):
     language = models.CharField(choices=LANGUAGE_CHOICES, default='python', max_length=100)
     style = models.CharField(choices=STYLE_CHOICES, default='friendly', max_length=100)
 
+    def __str__(self):
+        if self.title:
+            return self.title
+        else:
+            return self
+
     class Meta:
         """
         Provides field to use for ordering upon data retrieval.
