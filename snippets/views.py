@@ -5,7 +5,7 @@ from rest_framework import mixins, generics
 
 class SnippetList(mixins.ListModelMixin,
                   mixins.CreateModelMixin,
-                  genrics.GenericAPIView):
+                  generics.GenericAPIView):
     """
     List all code snippets, or create a new snippet.
     """
