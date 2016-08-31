@@ -45,11 +45,6 @@ class Snippet(models.Model):
         self.highlighted = highlight(self.code, lexer, formatter)
         super(Snippet, self).save(*args, **kwargs)
 
-    def __str__(self):
-        if self.title:
-            return self.title
-        else:
-            return self
 
     class Meta:
         """
