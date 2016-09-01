@@ -4,7 +4,7 @@ from rest_framework.routers import DefaultRouter
 
 
 # Create a router and register the viewsets.
-router = DefaultRouter()
+router = DefaultRouter(schema_title='Pastebin API')
 router.register(r'snippets', views.SnippetViewSet)
 router.register(r'users', views.UserViewSet)
 
